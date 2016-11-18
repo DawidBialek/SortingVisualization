@@ -6,7 +6,7 @@ void plane::getDataFormUser(sf::Vector2i windowSize)
 	{
 	cout << "Which sorting alorithm would you like to choose?" << endl
 		<< "\t1 - Bubble Sort" << endl
-		<< "The rest is WIP" << endl;
+		<< "\tThe rest is WIP" << endl;
 		cin >> whichSortingAlgorithm;
 	} while (whichSortingAlgorithm != 1);
 	
@@ -26,12 +26,12 @@ void plane::getDataFormUser(sf::Vector2i windowSize)
 
 	do
 	{
-		cout << "Set the range of elements values: ";
+		cout << "Set the range of elements values: " << endl;
 		cout << "min: ";
 		cin >> elementsValueRange.x;
 		cout << "max: ";
 		cin >> elementsValueRange.y;
-	} while (elementsValueRange.x >= 0 && elementsValueRange.y >= elementsValueRange.x);
+	} while (elementsValueRange.x >= 0 && elementsValueRange.y <= elementsValueRange.x);
 }
 
 plane::plane(sf::Vector2i windowSize)

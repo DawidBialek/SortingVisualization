@@ -12,7 +12,7 @@ class application
 	public:
 		sf::RenderWindow window;
 		sf::Vector2i windowSize;
-		plane plane(sf::Vector2i windowSize);
+		plane plane;
 
 		application();
 		void run();

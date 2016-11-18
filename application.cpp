@@ -1,6 +1,6 @@
 #include "application.h"
 
-application::application() : windowSize(1280, 720)
+application::application() : windowSize(1280, 720), plane(windowSize)
 {
 	window.create(sf::VideoMode(windowSize.x,windowSize.y), "Sorting Visualization ver. 0.01");
 };
